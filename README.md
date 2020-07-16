@@ -21,12 +21,26 @@ git clone https://github.com/xiezw5/Component-Divide-and-Conquer-for-Real-World-
 cd Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution/CDC
 ```
 #### Training
-1. Download our dataset and unpack them to any place you want. Then, change the ```dataroot``` and ```test_dataroot``` argument in ```options/realSR_CDC.py``` to the place where images are located.
+1. Download our dataset and unpack them to any place you want. Then, change the ```dataroot``` and ```test_dataroot``` argument in ```./options/realSR_CDC.py``` to the place where images are located.
 2. Run ```CDC_train_test.py``` using script file ```train_pc.sh```.
 ```bash
 sh ./train_pc.sh cdc_x4 ./CDC_train_test.py ./options/realSR_HGSR_MSHR.py 1
 ```
-3. You can find the results in ```experiments/CDC-X4``` if the ```exp_name``` argument in ```options/realSR_CDC.py``` is ```CDC-X4```
+3. You can find the results in ```./experiments/CDC-X4``` if the ```exp_name``` argument in ```./options/realSR_CDC.py``` is ```CDC-X4```
 
 #### Testing
-1. Download our pre-trained models to ```models``` folder
+1. Download our pre-trained models to ```./models``` folder or use your pre-trained models
+2. Change the ```test_dataroot``` argument in ```CDC_test.py``` to the place where images are located
+3. Run ```CDC_test.py``` using script file ```test_models_pc.sh```.
+```bash
+sh test_models_pc.sh cdc_x4_test ./CDC_test.py ./models/HGSR-MHR_X4_SubRegion_GW_283.pth 1
+```
+4. You can find the enlarged images in ```./results``` folder
+
+### Pretrained models
+1. [2X Models]()
+2. [3X Models]()
+3. [4X Models]()
+
+The above provided models are both trained on our dataset with our Gradient-weighted loss.
+
