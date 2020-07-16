@@ -61,3 +61,14 @@ Please download our dataset from [Baidu Drive](). There are 31970 192×192 patch
  |EDSR       |    4    |    32.03   |    0.855   |    0.307    |
  |RCAN       |    4    |    31.85   |    0.857   |    0.305    |
  |CDC(ours)  |    4    |  **32.42** |  **0.861** |  **0.300**  |
+
+## Citation
+If you find our work useful in your research or publication, please cite:
+```
+@InProceedings{wei2020cdc,
+  author = {Pengxu Wei, Ziwei Xie, Hannan Lu, ZongYuan Zhan, Qixiang Ye, Wangmeng Zuo, Liang Lin},
+  title = {Component Divide-and-Conquer for Real-World Image Super-Resolution},
+  booktitle = {Proceedings of the European Conference on Computer Vision},
+  year = {2020}
+}
+```
