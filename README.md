@@ -42,5 +42,22 @@ sh test_models_pc.sh cdc_x4_test ./CDC_test.py ./models/HGSR-MHR_X4_SubRegion_GW
 2. [3X Models]()
 3. [4X Models]()
 
-The above provided models are both trained on our dataset with our Gradient-weighted loss.
+The above provided models are both trained on our dataset with our gradient-weighted loss.
 
+## Dataset
+Please download our dataset from [Baidu Drive](). There are 31970 192×192 patches cropped for training and 93 images pairs for testing.
+
+ |Methods    |  scale  |    PSNR    |    SSIM    |    LPIPS    |
+ |-----------|---------|:----------:|:----------:|:-----------:|
+ |Bicubic    |    2    |    32.67   |    0.887   |    0.201    |
+ |EDSR       |    2    |    34.24   |    0.908   |    0.155    |
+ |RCAN       |    2    |    34.34   |    0.908   |    0.158    |
+ |CDC(ours)  |    2    |  **34.45** |  **0.910** |  **0.146**  |
+ |Bicubic    |    3    |    31.50   |    0.835   |    0.362    |
+ |EDSR       |    3    |    32.93   |    0.876   |    0.241    |
+ |RCAN       |    3    |    33.03   |    0.876   |  **0.241**  |
+ |CDC(ours)  |    3    |  **33.06** |  **0.876** |    0.244    |
+ |Bicubic    |    4    |    30.56   |    0.820   |    0.438    |
+ |EDSR       |    4    |    32.03   |    0.855   |    0.307    |
+ |RCAN       |    4    |    31.85   |    0.857   |    0.305    |
+ |CDC(ours)  |    4    |  **32.42** |  **0.861** |  **0.300**  |
