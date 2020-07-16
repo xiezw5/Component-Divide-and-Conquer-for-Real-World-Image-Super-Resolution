@@ -7,12 +7,18 @@ We provide full training and testing codes, pre-trained models and the large-sca
 
 ### Code
 #### Dependencies
-* Python 3
+* Python 3.6
 * PyTorch >= 1.1.0
 * numpy
-* skimage
-* matplotlib
-* tqdm
 * cv2
+* skimage
+* tqdm
+
+#### Quick Start
+1. Clone this github repo.
+```bash
+git clone https://github.com/xiezw5/Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution
+cd Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution
+```
 
 
