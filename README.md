@@ -15,6 +15,7 @@ We provide full training and testing codes, pre-trained models and the large-sca
 * tqdm
 
 #### Quick Start
+-- Training --
 1. Clone this github repo.
 ```bash
 git clone https://github.com/xiezw5/Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution
@@ -26,3 +27,5 @@ cd Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution/CDC
 sh ./train_pc.sh cdc_x4 ./CDC_train_test.py ./options/realSR_HGSR_MSHR.py 1
 ```
 4. You can find the results in ```experiments/CDC-X4``` if the ```exp_name``` argument in ```options/realSR_CDC.py``` is ```CDC-X4```
+
+-- Testing --
