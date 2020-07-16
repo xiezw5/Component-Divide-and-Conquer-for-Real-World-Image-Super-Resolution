@@ -21,7 +21,8 @@ git clone https://github.com/xiezw5/Component-Divide-and-Conquer-for-Real-World-
 cd Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution/CDC
 ```
 2. Download our dataset and unpack them to any place you want. Then, change the ```dataroot``` and ```test_dataroot``` argument in ```options/realSR_CDC.py``` to the place where images are located.
-3. Run ```CDC_train_test.py```
+3. Run ```CDC_train_test.py``` using script file ```train_pc.sh```.
 ```bash
 sh ./train_pc.sh cdc_x4 ./CDC_train_test.py ./options/realSR_HGSR_MSHR.py 1
 ```
+4. You can find the results in ```experiments/CDC-X4``` if the ```exp_name``` argument in ```options/realSR_CDC.py``` is ```CDC-X4```
