@@ -229,7 +229,7 @@ for batch, data in enumerate(test_loader):
             sr_var, SR_map = generator(hr_var)
 
             if isinstance(sr_var, list) or isinstance(sr_var, tuple):
-                sr_var = sr_var[0]
+                sr_var = sr_var[-1]
 
             if opt.use_spn:
                 sr_var = spn_net(sr_var)
