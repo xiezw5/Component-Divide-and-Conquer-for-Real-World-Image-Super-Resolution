@@ -1,7 +1,7 @@
 # Component Divide-and-Conquer for Real-World Image Super-Resolution(CDC)
 
 This repository is an official PyTorch implementation of the paper **"Component Divide-and-Conquer for Real-World Image Super-Resolution
-"** from **ECCV 2020**.
+"** from **ECCV 2020**. [[PDF](http://arxiv.org/abs/2008.01928)]
 
 We provide full training and testing codes, pre-trained models and the large-scale dataset used in our paper. You can train your model from scratch, or use a pre-trained model to enlarge your images.
 
