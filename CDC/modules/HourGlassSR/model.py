@@ -201,6 +201,10 @@ class HourGlassNetMultiScaleInt(nn.Module):
 
         self.n_HG = n_HG
         self.inter_supervis = inter_supervis
+        if upscale == 3:
+            ksize = 3
+        else:
+            ksize = 1
 
         self.conv_in = B.conv_block(in_nc, nf, kernel_size=3, norm_type=None, act_type=None)
         
@@ -216,10 +220,11 @@ class HourGlassNetMultiScaleInt(nn.Module):
             else:
                 upsampler = [B.upconv_blcok(nf, nf, act_type=act_type) for _ in range(n_upscale)]
             return nn.Sequential(LR_conv, *upsampler, HR_conv0, HR_conv1)
-                
-        self.flat_map = make_upsample_block(upscale=upscale, kernel_size=1)
-        self.edge_map = make_upsample_block(upscale=upscale, kernel_size=1)
-        self.corner_map = make_upsample_block(upscale=upscale, kernel_size=1)
+        
+        #Actually, the ksize can be any size for all scales
+        self.flat_map = make_upsample_block(upscale=upscale, kernel_size=ksize)
+        self.edge_map = make_upsample_block(upscale=upscale, kernel_size=ksize)
+        self.corner_map = make_upsample_block(upscale=upscale, kernel_size=ksize)
         
         self.upsample_flat = make_upsample_block(upscale=upscale)
         self.upsample_edge = make_upsample_block(upscale=upscale)
