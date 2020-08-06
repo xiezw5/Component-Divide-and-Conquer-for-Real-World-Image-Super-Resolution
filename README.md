@@ -40,9 +40,9 @@ sh test_models_pc.sh cdc_x4_test ./CDC_test.py ./models/HGSR-MHR_X4_SubRegion_GW
 ### Pretrained models
 1. [2X Models]()
 2. [3X Models]()
-3. [4X Models]()
+3. [4X Models](https://pan.baidu.com/s/1ETXraFkU2qAW4wS8LCFxIg)
 
-The above provided models are both trained on our dataset with our gradient-weighted loss.
+All the verification codes are ```6wq8```. The above provided models are both trained on our dataset with our gradient-weighted loss.
 
 ## Dataset
 Please download our dataset from [Baidu Drive](https://pan.baidu.com/s/1ey9JF4S5wLnE5Iw5z67R8A). The verification code is ```osiy```. There are 31970 192×192 patches cropped for training and 93 image pairs for testing.
