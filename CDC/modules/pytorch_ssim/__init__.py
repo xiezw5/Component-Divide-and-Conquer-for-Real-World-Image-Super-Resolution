@@ -69,12 +69,12 @@ def ssim(img1, img2, window_size = 11, size_average = True):
         img2 = img2.unsqueeze(0)
     (_, channel, _, _) = img1.size()
     
-    if channel > 1:
-        gray_coeffs = [65.738, 129.057, 25.064]
-        convert = img1.new_tensor(gray_coeffs).view(1, 3, 1, 1) / 256
-        img1 = img1.mul(convert).sum(dim=1, keepdim=True)
-        img2 = img2.mul(convert).sum(dim=1, keepdim=True)
-        (_, channel, _, _) = img1.size()
+    #if channel > 1:
+    #    gray_coeffs = [65.738, 129.057, 25.064]
+    #    convert = img1.new_tensor(gray_coeffs).view(1, 3, 1, 1) / 256
+    #    img1 = img1.mul(convert).sum(dim=1, keepdim=True)
+    #    img2 = img2.mul(convert).sum(dim=1, keepdim=True)
+    #    (_, channel, _, _) = img1.size()
     window = create_window(window_size, channel)
     
     if img1.is_cuda:
