@@ -38,8 +38,8 @@ sh test_models_pc.sh cdc_x4_test ./CDC_test.py ./models/HGSR-MHR_X4_SubRegion_GW
 4. You can find the enlarged images in ```./results``` folder
 
 ### Pretrained models
-1. [2X Models]()
-2. [3X Models]()
+1. [2X Models](https://pan.baidu.com/s/1f__AzvFlh5TgnTI5mEH-SA)
+2. [3X Models](https://pan.baidu.com/s/1sk5pvxhc0sBiGQOj6v99Cw)
 3. [4X Models](https://pan.baidu.com/s/1ETXraFkU2qAW4wS8LCFxIg)
 
 All the verification codes are ```6wq8```. The above provided models are both trained on our dataset with our gradient-weighted loss.
