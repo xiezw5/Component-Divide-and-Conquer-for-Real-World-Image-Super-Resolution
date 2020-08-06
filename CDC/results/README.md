@@ -1,1 +1,1 @@
-Save the testing images
+Save the output images
