@@ -45,7 +45,7 @@ sh test_models_pc.sh cdc_x4_test ./CDC_test.py ./models/HGSR-MHR_X4_SubRegion_GW
 The above provided models are both trained on our dataset with our gradient-weighted loss.
 
 ## Dataset
-Please download our dataset from [Baidu Drive](https://pan.baidu.com/s/1ey9JF4S5wLnE5Iw5z67R8A). The verification code is ```osiy```. There are 31970 192×192 patches cropped for training and 93 image pairs for testing.
+Please download our dataset from [Baidu Drive](https://pan.baidu.com/s/1ey9JF4S5wLnE5Iw5z67R8A). The verification code is ```osiy```. There are 31970 192×192 patches cropped for training and 93 image pairs for testing. Also we upload dataset to google drive: [Train](https://drive.google.com/drive/folders/1tP5m4k1_shFT6Dcw31XV8cWHtblGmbOk?usp=sharing) [Test X2](https://drive.google.com/drive/folders/1Mq0fcRy7CyOctR83i6fz6OMTcty22xO3?usp=sharing) [Test X3](https://drive.google.com/drive/folders/16B4ssDaDAsH-kE7LQXY5JOxijq5abqhf?usp=sharing) [Test X4](https://drive.google.com/drive/folders/1_EjDsD2-bBXb0iRonbWI6ihuHquxdna1?usp=sharing)
 
  |Methods    |  Scale  |    PSNR    |    SSIM    |    LPIPS    |
  |-----------|---------|:----------:|:----------:|:-----------:|
